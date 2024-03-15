@@ -32,6 +32,7 @@ interface CommonModalProps {
   aText: string;
   bText: string;
   cNumber: number;
+  title: string;
 }
 
 const CommonModal = (props: CommonModalProps) => {
@@ -43,7 +44,7 @@ const CommonModal = (props: CommonModalProps) => {
 
   return (
     <Dimmed>
-      <ModalLayout title={'모달입니다'} setIsModalOpen={props.setIsModalOpen}>
+      <ModalLayout title={props.title} setIsModalOpen={props.setIsModalOpen}>
         <>
           <p>모달 내용입니다</p>
           <FormControl fullWidth>

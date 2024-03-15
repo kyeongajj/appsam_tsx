@@ -31,14 +31,17 @@ const ModalCloseButton = styled(Button)({
 interface ModalLayoutProps {
   title: string;
   children: React.ReactElement;
+  setIsModalOpen: (state: boolean) => void;
 }
 
-const ModalLayout = ({ title, children }: ModalLayoutProps) => {
+const ModalLayout = (props: ModalLayoutProps) => {
   return (
     <LayoutBox>
-      <ModalTitle>{title}</ModalTitle>
-      <ModalBody>{children}</ModalBody>
-      <ModalCloseButton>닫기</ModalCloseButton>
+      <ModalTitle>{props.title}</ModalTitle>
+      <ModalBody>{props.children}</ModalBody>
+      <ModalCloseButton onClick={() => props.setIsModalOpen(false)}>
+        닫기
+      </ModalCloseButton>
     </LayoutBox>
   );
 };

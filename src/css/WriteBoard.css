@@ -1,0 +1,42 @@
+.WriteBoard {
+  position: relative;
+  width: 100%; height: 100vh;
+  background-color: #eee;
+  padding:10px 0;
+}
+.listWrap {
+  width: calc(100vw - 260px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.listWrap li {
+  padding:0 10px;
+  flex-grow: 1;
+  height: 60px;
+  line-height: 60px;
+  text-align: left;
+}
+.listWrap li span {
+  font-size: 14px;
+}
+.listWrap li:nth-child(1) {
+  text-align: center;
+  flex-grow: 0;
+  width:80px;
+}
+.listWrap li:nth-child(2),
+.listWrap li:nth-child(3),
+.listWrap li:nth-child(5) {
+  flex-grow: 0;
+  width:120px;
+  min-width:100px;
+}
+.listWrap li:nth-child(4) {
+  flex-grow: 1;
+}
+.listWrap li:nth-child(6),li:nth-child(7) {
+  flex-grow: 0;
+  width:120px
+}

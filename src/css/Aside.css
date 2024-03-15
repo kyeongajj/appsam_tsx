@@ -1,0 +1,41 @@
+* {margin:0; padding: 0}
+ul {list-style: none;}
+a {text-decoration: none;}
+.Aside {
+  position: relative;
+  width: 260px; height: 100vh;
+  background-color: #1976d2;
+  color:#fff;
+  padding: 25px 18px;
+}
+.Aside.h3.asideTitle {
+  font-size: 35px;
+  font-weight: bold;
+}
+.Aside .AsideMenuWrap {
+  position: absolute;
+  width: calc(100% - 36px);
+ 
+}
+.Aside .AsideMenuWrap .AsideMenu {
+  position: relative;
+  font-size: 12px;
+  /* font-weight: bold; */
+  height: 150px; 
+  border-top:1px solid rgba(255, 255, 255, 0.6);
+  display: block;
+  padding-top: 20px;
+  color:rgba(255, 255, 255, 0.6);
+}
+.AsideMenu .AsideMenuDepth {
+  position: absolute; top: 50px;left: 0;
+}
+.AsideMenu .AsideMenuDepth li {
+  font-size: 17px;
+  line-height: 24px;
+}
+.AsideMenu .AsideMenuDepth li a{
+  display: block;
+  line-height: 30px;
+  color:#fff;
+}
